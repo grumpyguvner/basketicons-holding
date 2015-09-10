@@ -1,21 +1,21 @@
 /*
 * Primary Color:  (dark blue)
-*   RGB(0,52,77) = #00344d
+*   RGB(0,52,77) = #00bcfc
 * Secondary Color: (medium blue)
 *   RBG(0,86,119) #005677
 * Tertiary Color: (light blue)
-*   RBG(167,202,211) #a7cad3
+*   RBG(167,202,211) #bcfc00
 * Gray: #75787c
 */
 html {
   height: 100%;
 }
 body {
-  background: #a7cad3;
+  background: #0083b0;
   font-size: 16px;
   line-height: 1.5em;
   font-family: 'Montserrat', sans-serif;
-  color: #00344d;
+  color: #75787c;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   padding: 0;
@@ -28,25 +28,25 @@ a {
 a:focus,
 a:active,
 a:hover {
-    color: #00344d;
+    color: #00bcfc;
 }
 #wrapper {
   padding: 0;
   margin: 0;
   min-height: 100%;
-  background: #a7cad3;
+  background: #0083b0;
 }
 @media (min-width: 768px) {
   #wrapper {
-    background: #a7cad3 url(/assets/img/mountain_background.jpg) no-repeat center center;
+    background: #0083b0 url(/assets/img/background.jpg) no-repeat center center;
     background-size: cover;
   }
 }
 #main {
   margin: 20px 0;
   padding: 10px;
-  background-color:rgba(255,255,255,0.8);
-  border: 1px solid #00344d;
+  background-color:rgba(255,255,255,0.6);
+  border: 1px solid #00bcfc;
 }
 @media (min-width: 768px) {
   #main {
@@ -75,24 +75,24 @@ a:hover {
 .btn-default {
   border-radius: 6px;
   color: #fff;
-  background-color: #00344d;
-  border-color: #00344d;
+  background-color: #00bcfc;
+  border-color: #00bcfc;
   text-transform: uppercase;
   width: 120px;
   text-align: center;
 }
 .btn-default:focus,
 .btn-default:hover {
-  color: #00344d;
-  background-color: #a7cad3;
-  border-color: #a7cad3;
+  color: #00bcfc;
+  background-color: #bcfc00;
+  border-color: #bcfc00;
 }
 .btn-default[disabled] {
   color: #75787c;
 }
 header {
   font-size: 27px;
-  color: #00344d;
+  color: #00bcfc;
   font-weight: normal;
   padding-bottom: 13px;
   border-bottom: 1px solid #75787c;

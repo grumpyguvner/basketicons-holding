@@ -1,54 +1,10 @@
 <?php
-switch ($_SERVER['SERVER_NAME']) {
-    case "www.classicalpine.com":
-        $title = "Classic Alpine Ski Holidays";
-        $subtitle = "Specialist holidays for active and sociable 50 somethings who love mountains and skiing.";
-        $css = "classic.css";
-        $logo = "classic";
-        $list = "http://newsletters.boundlessmarketing.co.uk/t/j/s/xkhthy/";
-        $field = "cm-xkhthy-xkhthy";
-        $brands_title = "Our Resorts";
-        $brands = array(
-            1 => array("name" => "Flaine", "url" => ""),
-            2 => array("name" => "La Clusaz", "url" => ""),
-            3 => array("name" => "Morzine", "url" => ""),
-            4 => array("name" => "Les Saises", "url" => ""),
-            5 => array("name" => "Crest Voland", "url" => "")
-        );
-        $credit = "David Machet";
-        break;
-    case "www.vividmountain.com":
-        $title = "Vivid Mountain Ski Holidays";
-        $subtitle = "Hassle free, care free, high quality holidays for gay men aged 35 and over that have a love of the mountains and particularly skiing.";
-        $css = "vivid.css";
-        $logo = "vivid";
-        $list = "http://newsletters.boundlessmarketing.co.uk/t/j/s/xkhthj/";
-        $field = "cm-xkhthj-xkhthj";
-        $brands_title = "Our Resorts";
-        $brands = array(
-            1 => array("name" => "Flaine", "url" => ""),
-            2 => array("name" => "La Clusaz", "url" => ""),
-            3 => array("name" => "Morzine", "url" => ""),
-            4 => array("name" => "Les Saises", "url" => ""),
-            5 => array("name" => "Crest Voland", "url" => "")
-        );
-        $credit = "David Machet";
-        break;
-    default:
-        $title = "The Mountain Experience Company";
-        $subtitle = "Specialist holiday brands in a mountain environment.";
+        $title = "Basket Icons";
+        $subtitle = "POS SYSTEMS | ONLINE RETAIL | MOBILE COMMERCE | B2B";
         $css = "main.css";
-        $logo = "mountain";
-        $list = "http://newsletters.boundlessmarketing.co.uk/t/j/s/xkhtll/";
-        $field = "cm-xkhtll-xkhtll";
-        $brands_title = "Our Brands";
-        $brands = array(
-            1 => array("name" => "CLASSIC ALPINE", "url" => "http://www.classicalpine.com/"),
-            2 => array("name" => "VIVID MOUNTAIN", "url" => "http://www.vividmountain.com/")
-        );
-        $credit = false;
-        break;
-}
+        $logo = "basketicons";
+        $list = "http://newsletters.boundlessmarketing.co.uk/t/j/s/matth/";
+        $field = "cm-matth-matth";
 ?>
 <!doctype html>
 <html class="no-js" lang="EN">
@@ -84,9 +40,9 @@ switch ($_SERVER['SERVER_NAME']) {
         <div class="container">
         <section id="main">
             <header>
-                <img src="assets/img/<?php echo $logo; ?>_logo.png" alt="Mountain Experience" width="315" height="181">
+                <img src="assets/img/<?php echo $logo; ?>-logo.png" alt="Basket Icons" width="200" height="200">
             </header>
-            <p><?php echo $title; ?> is coming soon &hellip; <?php echo $subtitle; ?></p>
+            <p><?php echo $title; ?> is coming soon &hellip; <br><?php echo $subtitle; ?></p>
             <footer>
                 <p>For more information enter your email address below</p>
                 <form action="<?php echo $list; ?>" method="post" id="subForm">
@@ -97,26 +53,10 @@ switch ($_SERVER['SERVER_NAME']) {
                       </span>
                     </div>
                 </form>
-                <div>
-                <h2><span></span><?php echo $brands_title; ?><span></span></h2>
-                <div></div>
-                <ul>
-                    <?php foreach($brands AS $brand) { ?><span></span></h2>
-                      <?php if ($brand['url'] == "") { ?>
-                        <li><?php echo $brand['name']; ?></li>
-                      <?php } else { ?>
-                        <li><a href="<?php echo $brand['url']; ?>" title="<?php echo $brand['name']; ?>"><?php echo $brand['name']; ?></a></li>
-                      <?php } ?>
-                    <?php } ?><span></span></h2>
-                </ul>
-                </div>
             </footer>
         </section>
         </div>
         </div>
-        <?php if ($credit) { ?>
-          <div class="credit">Photograph courtesy <?php echo $credit; ?></div>
-        <?php } ?>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery.min.js"><\/script>')</script>
         <script src="/assets/js/main.min.js"></script>
